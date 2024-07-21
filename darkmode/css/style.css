@@ -1,0 +1,142 @@
+*,*::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --background-color: #f6f6f6;
+    --font-color: black;
+    --gradient: linear-gradient(to right, #4AC29A, #BDFFF3);
+}
+
+:root.darkmode{
+    --background-color: #212730;
+    --font-color: white;
+    --gradient: linear-gradient(to right, #3F5EFB, #FC466B);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', system-ui, sans-serif;
+    font: var(--background-color);
+    display: grid;
+    grid-template-columns: 25% 75%;
+    min-height: 100vh;
+    padding: 2rem;
+    background: var(--gradient);
+    color: var(--font-color);
+}
+
+*{
+    font-family: 'Trebuchet MS', system-ui, sans-serif;
+}
+
+aside{
+    background: var(--background-color);
+    border-radius: 3rem 0 0 3rem;
+    padding: 4rem;
+    font-size:2rem;
+}
+
+main {
+    border-radius: 0 3rem 3rem 0;
+    background-color: var(--background-color);
+}
+
+
+
+.navigation{
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: space-between;
+    justify-content: space-between;
+}
+
+.navigation__list{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.navigation__listItem{
+    list-style: none;
+    text-decoration: none;
+}
+
+.navigation__link{
+    color: var(--font-color);
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+.navigation__link:visited{
+    color: var(--font-color);
+}
+
+.navigation__premium{
+    border: none;
+    background: var(--gradient);
+    box-shadow: 0 0 rem 2rem;
+    font-size: 3rem;
+    padding: 1.5rem;
+    border-radius: 5rem;
+    color: white;
+}
+
+.dashboardheadder{
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem;
+    font-size: 3rem;
+}
+
+.dashboardheadder__heading{
+    
+}
+
+.darkmodebutton{
+    appearance: none;
+    display:block;
+    width: 10rem;
+    height: 10rem;
+}
+
+.products{
+    display: flex;
+    gap: 2rem;
+}
+
+.products__product{
+    gap: 4rem;
+    list-style: none;
+    width: 20rem;
+    height: 30rem;
+    border: thin dashed gray;
+    padding: 3rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.products__addbutton{
+    width: 7rem;
+    height: 7rem;
+    background: var(--gradient);
+    border: none;
+    font-size: 4rem;
+    color: white;
+    border-radius: 50%;
+}
+
+.products__text{
+    font-size: 3rem;
+    
+}
